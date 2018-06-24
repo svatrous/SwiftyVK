@@ -3,10 +3,6 @@ import Foundation
 /// SwiftyVK entry point
 public final class VK {
     public static func setUp(appId: String, delegate: SwiftyVKDelegate) {
-        guard dependencies == nil else {
-            return
-        }
-        
         dependencies = dependenciesType.init(appId: appId, delegate: delegate)
     }
     
